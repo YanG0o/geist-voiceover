@@ -5,14 +5,14 @@ plugins {
 
 android {
     namespace = "com.higo.voiceover"
-    compileSdk = 34
+    compileSdk = Versions.compileSdkVersion
 
     defaultConfig {
         applicationId = "com.higo.voiceover"
-        minSdk = 24
-        targetSdk = 34
-        versionCode = 1
-        versionName = "1.0"
+        minSdk = Versions.minSdkVersion
+        targetSdk = Versions.targetSdkVersion
+        versionCode = Versions.versionCode
+        versionName = Versions.versionName
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {

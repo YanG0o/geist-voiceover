@@ -21,4 +21,5 @@ dependencyResolutionManagement {
 
 rootProject.name = "gest"
 include(":app")
- 
+include(":modulesPublic:https")
+//include(":https")
