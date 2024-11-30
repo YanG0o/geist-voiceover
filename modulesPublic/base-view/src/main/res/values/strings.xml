@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">gest</string>
+    <string name="tips_check_network">请检查网络连接</string>
+    <string name="tips_no_data">没有数据</string>
+    <string name="tips_network_timeout">网络连接超时</string>
+    <string name="tips_oom">手机内存不足</string>
+    <string name="tips_server_error">服务错误</string>
+    <string name="latest_version">最新版本</string>
+    <string name="tips_empty_data">这里什么都没有</string>
+    <string name="tips_network_error">暂无网络</string>
+
+
+    <string name="language_auto">自动选择</string>
+    <string name="language_chinese">中文</string>
+    <string name="language_english">英语</string>
+    <string name="language_japanese">日本语</string>
+    <string name="language_korean">韩语</string>
+    <string name="language_french">法语</string>
+    <string name="language_russian">俄语</string>
+    <string name="language_germany">德语</string>
+    <string name="language_wenyanwen">文言文</string>
+    <string name="language_thai">泰语</string>
+    <string name="language_portuguese">葡萄牙语</string>
+    <string name="language_vietnamese">越南语</string>
+    <string name="language_italian">意大利语</string>
+    <string name="language_chinese_yue">粤语</string>
+    <string name="request_permission">请求权限</string>
+    <string name="confirm">确认</string>
+    <string name="language_spanish">西班牙语</string>
+    <string name="follow_system">跟随系统</string>
+    <string name="unsupported_language">此语种暂不支持</string>
+
+</resources>

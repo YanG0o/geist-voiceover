@@ -19,7 +19,9 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "gest"
+rootProject.name = "gest-voiceover"
 include(":app")
-include(":modulesPublic:https")
+include(":modulesPublic:http")
+include(":modulesPublic:base-view")
+include(":modulesPublic:commonutil")
 //include(":https")

@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.kigi.https"
-    compileSdk = Versions.compileSdkVersion
+    namespace = "com.kigi.commonutil"
+    compileSdk = 34
 
     defaultConfig {
-        minSdk = Versions.minSdkVersion
+        minSdk = 24
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles("consumer-rules.pro")
@@ -24,11 +24,11 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_11
-        targetCompatibility = JavaVersion.VERSION_11
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
     }
     kotlinOptions {
-        jvmTarget = "11"
+        jvmTarget = "1.8"
     }
 }
 
@@ -40,4 +40,12 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
+    // if you want to use DataStore
+//    api (libs.data.saver.core)
+    api(libs.data.saver.core.v121)
+    api(libs.data.saver.data.store.preferences.v121)
+//    api (libs.data.saver.data.store.preferences)
+    api (libs.androidx.datastore)
+    api (libs.androidx.datastore.preferences)
 }

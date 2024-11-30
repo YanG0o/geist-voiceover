@@ -1,18 +1,32 @@
 [versions]
 agp = "8.6.0"
+dataSaverCore = "1.2.1"
+dataSaverDataStorePreferencesVersion = "1.2.1"
+datastore = "1.0.0"
 kotlin = "1.9.0"
-coreKtx = "1.10.1"
+coreKtx = "1.12.0"
 junit = "4.13.2"
 junitVersion = "1.2.1"
 espressoCore = "3.6.1"
+kotlinxSerializationJson = "1.6.2"
 lifecycleRuntimeKtx = "2.8.6"
 activityCompose = "1.8.0"
 composeBom = "2024.04.01"
 appcompat = "1.6.1"
+loggingInterceptor = "4.9.3"
 material = "1.10.0"
+
+retrofitVersion = "2.11.0"
+converterGson = "2.11.0"
+gson = "2.11.0"
+lottie = "6.1.0"
+datastorePreferences = "1.0.0"
+uiToolingPreviewAndroid = "1.6.6"
+
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-datastore = { module = "androidx.datastore:datastore", version.ref = "datastore" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
 androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
@@ -28,6 +42,20 @@ androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit
 androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
 androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+
+androidx-lifecycle-viewmodel-ktx = { module = "androidx.lifecycle:lifecycle-viewmodel-ktx", version.ref = "lifecycleRuntimeKtx" }
+retrofit-v290 = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofitVersion" }
+converter-gson-v210 = { module = "com.squareup.retrofit2:converter-gson", version.ref = "converterGson" }
+gson = { module = "com.google.code.gson:gson", version.ref = "gson" }
+logging-interceptor-v493 = { module = "com.squareup.okhttp3:logging-interceptor", version.ref = "loggingInterceptor" }
+lottie = { module = "com.airbnb.android:lottie-compose", version.ref = "lottie" }
+androidx-datastore-preferences = { module = "androidx.datastore:datastore-preferences", version.ref = "datastorePreferences" }
+data-saver-core-v121 = { module = "io.github.FunnySaltyFish:data-saver-core", version.ref = "dataSaverCore" }
+data-saver-data-store-preferences-v121 = { module = "io.github.FunnySaltyFish:data-saver-data-store-preferences", version.ref = "dataSaverDataStorePreferencesVersion" }
+kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinxSerializationJson" }
+androidx-ui-tooling-preview-android = { group = "androidx.compose.ui", name = "ui-tooling-preview-android", version.ref = "uiToolingPreviewAndroid" }
+
+
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
