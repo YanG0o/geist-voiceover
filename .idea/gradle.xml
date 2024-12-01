@@ -23,10 +23,13 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/buildSrc" />
-            <option value="$PROJECT_DIR$/modulesPublic" />
-            <option value="$PROJECT_DIR$/modulesPublic/base-view" />
-            <option value="$PROJECT_DIR$/modulesPublic/commonutil" />
-            <option value="$PROJECT_DIR$/modulesPublic/http" />
+            <option value="$PROJECT_DIR$/modulesBase" />
+            <option value="$PROJECT_DIR$/modulesBase/base-view" />
+            <option value="$PROJECT_DIR$/modulesBase/commonutil" />
+            <option value="$PROJECT_DIR$/modulesBase/http" />
+            <option value="$PROJECT_DIR$/modulesFeat" />
+            <option value="$PROJECT_DIR$/modulesFeat/login" />
+            <option value="$PROJECT_DIR$/modulesFeat/module-res" />
           </set>
         </option>
         <option name="resolveExternalAnnotations" value="false" />

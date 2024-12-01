@@ -5,13 +5,7 @@
       <SelectionState runConfigName="app">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
-      <SelectionState runConfigName="https">
-        <option name="selectionMode" value="DROPDOWN" />
-      </SelectionState>
-      <SelectionState runConfigName="modulesPublic.https">
-        <option name="selectionMode" value="DROPDOWN" />
-      </SelectionState>
-      <SelectionState runConfigName="commonutil">
+      <SelectionState runConfigName="modulesFeat.login">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
     </selectionStates>

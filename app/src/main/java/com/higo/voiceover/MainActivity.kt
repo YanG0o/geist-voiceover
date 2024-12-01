@@ -9,7 +9,9 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -26,39 +28,35 @@ import com.kigi.baseview.BaseActivity
 import com.kigi.baseview.viewmodel.BaseViewModel
 
 class MainActivity : BaseActivity<BaseViewModel>() {
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-//        setContent {
-//            AppTheme {
-//                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-//                    Greeting(
-//                        name = "Android",
-//                        modifier = Modifier.padding(innerPadding)
-//                    )
-//                }
-//            }
+        title = getString(R.string.app_name)
     }
 
     @Composable
-    override fun Greeting(modifier: Modifier) {
-        BaseView(name = "Android", modifier = modifier)
+    override fun Greeting(modifier: Modifier,na) {
+        BaseView(name = title, modifier = modifier)
     }
 }
 
 
 @Composable
 fun BaseView(name: String, modifier: Modifier = Modifier) {
-    Column(modifier = Modifier
-        .fillMaxWidth()
-        .background(Color.Blue)) {
+    Column(
+        modifier = Modifier
+            .fillMaxWidth()
+            .background(Color.Blue)
+    ) {
         Text(
             text = "Hello $name!",
             color = Color.Red,
             fontSize = 28.sp,
             fontStyle = FontStyle.Italic,
             fontWeight = FontWeight.Bold,
-            modifier = modifier
+            modifier = Modifier
                 .background(Color.Black)
                 .padding(10.dp)
                 .align(Alignment.CenterHorizontally)
