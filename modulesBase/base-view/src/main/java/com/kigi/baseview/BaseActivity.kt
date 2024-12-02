@@ -62,29 +62,39 @@ abstract class BaseActivity<out ViewModel : BaseViewModel> : ComponentActivity()
 
     var title by mutableStateOf("")
     var isShowHorizontalDivider by mutableStateOf(true)
-//    var appBarHeight by mutableIntStateOf(44)
+    var isShowAppBar by mutableStateOf(true)
+
+    abstract fun initData()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         enableEdgeToEdge()
         super.onCreate(savedInstanceState)
         activityResultLauncher.onActivityCreate(this)
         observe(viewModel)
+        initData()
         setContent {
             val statusBarHeight by remember { mutableIntStateOf(ViewUtil.getStatusBarHeight(this)) }
             val navController = rememberNavController()
             GTheme(color = Color.White) {
                 Scaffold(
                     topBar = {
-                        AppBar(title,navController)
+                        if (isShowAppBar) {
+                            AppBar(title, navController)
+                        }
                     },
                     bottomBar = {},
                     floatingActionButton = {},
-                    modifier = Modifier
-                        .fillMaxSize()
-//                        .background(color = Color.Blue)
-                        .padding(top = statusBarHeight.dp)
+                    modifier = if (isShowAppBar) {
+                        Modifier
+                            .fillMaxSize()
+                            .padding(top = statusBarHeight.dp)
+                    } else {
+                        Modifier
+                            .fillMaxSize()
+                            .padding(0.dp)
+                    }
                 ) { innerPadding ->
-                    Greeting(Modifier.padding(innerPadding),navController )
+                    Greeting(Modifier.padding(innerPadding), navController)
                     if (isShowHorizontalDivider) {
                         HorizontalDivider(
                             modifier = Modifier.padding(innerPadding),
@@ -136,7 +146,7 @@ abstract class BaseActivity<out ViewModel : BaseViewModel> : ComponentActivity()
 
 
     @Composable
-    fun AppBar(title: String,navController: NavHostController) {
+    fun AppBar(title: String, navController: NavHostController) {
 
         Row(
             Modifier

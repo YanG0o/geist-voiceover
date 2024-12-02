@@ -70,6 +70,7 @@ val color_222222 = Color(0xFF222222)
 val color_999999 = Color(0xFF999999)
 val color_df = Color(0xdfdfdfdf)
 val color_aa000000 = Color(0xaa000000)
+val color_66b32e = Color(0xff66b32e)
 
 
 

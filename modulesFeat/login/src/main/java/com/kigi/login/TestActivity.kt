@@ -18,6 +18,10 @@ import com.kigi.baseview.BaseActivity
 import com.kigi.baseview.viewmodel.BaseViewModel
 
 class TestActivity:BaseActivity<BaseViewModel>() {
+    override fun initData() {
+
+    }
+
     @Composable
     override fun Greeting(modifier: Modifier,navController: NavHostController) {
         BaseView("TestActivity",modifier)

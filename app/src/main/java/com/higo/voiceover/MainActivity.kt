@@ -23,21 +23,20 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.navigation.NavHostController
 import com.higo.voiceover.ui.theme.AppTheme
 import com.kigi.baseview.BaseActivity
 import com.kigi.baseview.viewmodel.BaseViewModel
 
 class MainActivity : BaseActivity<BaseViewModel>() {
 
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-
+    override fun initData() {
         title = getString(R.string.app_name)
+
     }
 
     @Composable
-    override fun Greeting(modifier: Modifier,na) {
+    override fun Greeting(modifier: Modifier,navController: NavHostController) {
         BaseView(name = title, modifier = modifier)
     }
 }
